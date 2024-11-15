@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Potability Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        body {
+            background: url('static/1163977.jpg') no-repeat center center fixed; 
+            background-size: cover; 
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Water Potability Prediction</h1>
+        <form action="/predict" method="POST">
+            <label for="ph">pH:</label>
+            <input type="text" name="ph" required>
+            
+            <label for="Hardness">Hardness:</label>
+            <input type="text" name="Hardness" required>
+            
+            <label for="Solids">Solids:</label>
+            <input type="text" name="Solids" required>
+            
+            <label for="Chloramines">Chloramines:</label>
+            <input type="text" name="Chloramines" required>
+            
+            <label for="Sulfate">Sulfate:</label>
+            <input type="text" name="Sulfate" required>
+            
+            <label for="Conductivity">Conductivity:</label>
+            <input type="text" name="Conductivity" required>
+            
+            <label for="Organic_carbon">Organic Carbon:</label>
+            <input type="text" name="Organic_carbon" required>
+            
+            <label for="Trihalomethanes">Trihalomethanes:</label>
+            <input type="text" name="Trihalomethanes" required>
+            
+            <label for="Turbidity">Turbidity:</label>
+            <input type="text" name="Turbidity" required>
+            
+            <button type="submit">Predict</button>
+        </form>
+        {% if result %}
+            <h2>{{ result }}</h2>
+        {% endif %}
+    </div>
+</body>
+</html>
+
+
+
