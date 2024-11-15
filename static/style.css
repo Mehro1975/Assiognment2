@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5; /* Light gray background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: white; /* White background for the container */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    color: #000; /* Set text color to black */
+}
+
+h1 {
+    margin-bottom: 1rem;
+    color: #000; /* Set heading color to black */
+}
+
+form label {
+    display: block;
+    text-align: left;
+    margin-top: 1rem;
+    color: #000; /* Set label color to black */
+}
+
+form input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ccc; /* Add a border to the input fields */
+    border-radius: 4px; /* Rounded corners for input fields */
+}
+
+button {
+    margin-top: 1rem;
+    padding: 0.5rem;
+    background-color: #28a745; /* Green background for the button */
+    color: white; /* White text on button */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+h2 {
+    margin-top: 1rem;
+    color: #333; /* Dark gray for result text */
+}
